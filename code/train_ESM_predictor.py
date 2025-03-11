@@ -53,7 +53,7 @@ print("Tokenizer Loaded")
 
 # load peptide data
 data_folder_path = os.path.join(folder_path, "PepBD")
-df = pd.read_csv(os.path.join(data_folder_path, plastic_name + '_clean.csv'))
+df = pd.read_csv(os.path.join(data_folder_path, plastic_name + '.csv'))
 
 if os.name == 'nt': # windows
     df = df.sample(n=1000, random_state=random_seed) 
